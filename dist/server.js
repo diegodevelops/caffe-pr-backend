@@ -11,7 +11,7 @@ var overview_1 = __importDefault(require("./handlers/overview"));
 var dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 var app = (0, express_1.default)();
-var port = process.env.PORT || '3000';
+var port = parseInt(process.env.PORT || '3000');
 var address = "0.0.0.0:".concat(port);
 app.use(body_parser_1.default.json());
 app.get('/', function (req, res) {
@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 (0, users_1.default)(app);
 (0, products_1.default)(app);
 (0, overview_1.default)(app);
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("starting app on: ".concat(address));
 });
 exports.default = app;

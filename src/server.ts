@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config()
 
 const app: express.Application = express()
-const port: string = process.env.PORT || '3000'
+const port: number = parseInt(process.env.PORT || '3000')
 const address: string = `0.0.0.0:${port}`
 
 app.use(bodyParser.json())
@@ -21,7 +21,7 @@ userRoutes(app);
 productRoutes(app);
 overviewRoutes(app);
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log(`starting app on: ${address}`)
 })
 
