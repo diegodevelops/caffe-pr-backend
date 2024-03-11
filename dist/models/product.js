@@ -102,8 +102,8 @@ var ProductStore = /** @class */ (function () {
                         return [4 /*yield*/, database_1.default.connect()];
                     case 1:
                         conn = _a.sent();
-                        sql = 'INSERT INTO products (name, price) VALUES ($1, $2) RETURNING *';
-                        return [4 /*yield*/, conn.query(sql, [p.name, p.price])];
+                        sql = 'INSERT INTO products (name, price, url) VALUES ($1, $2, $3) RETURNING *';
+                        return [4 /*yield*/, conn.query(sql, [p.name, p.price, p.url])];
                     case 2:
                         result = _a.sent();
                         conn.release();

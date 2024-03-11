@@ -32,7 +32,8 @@ const show = async (_req: express.Request, res: express.Response) => {
 const create = async (_req: express.Request, res: express.Response) => {
     const product: Product = {
         name: _req.body.name,
-        price: Number(_req.body.price)
+        price: Number(_req.body.price),
+        url: _req.body.url
     }
     try {
 

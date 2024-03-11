@@ -90,7 +90,8 @@ var create = function (_req, res) { return __awaiter(void 0, void 0, void 0, fun
             case 0:
                 product = {
                     name: _req.body.name,
-                    price: Number(_req.body.price)
+                    price: Number(_req.body.price),
+                    url: _req.body.url
                 };
                 _a.label = 1;
             case 1:
