@@ -1,4 +1,4 @@
-# Storefront Backend 
+# Back-end for CaffePR
 An simple API for an online store, developed with Typescript and a few popular modules. Some of the modules and patterns used include:
 
 - `espress` and its router for the app
