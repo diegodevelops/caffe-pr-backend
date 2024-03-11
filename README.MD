@@ -39,14 +39,14 @@ POSTGRES_USER=
 POSTGRES_PASSWORD=
 BCRYPT_PASSWORD=
 SALT_ROUNDS=10
-TOKEN_SECRET=secret-123456789
-TEST_USERNAME=diegoperez
-TEST_PASSWORD=hello123
-TEST_JWT=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZpcnN0TmFtZSI6IkRpZWdvIiwibGFzdE5hbWUiOiJQw6lyZXoiLCJ1c2VybmFtZSI6ImRpZWdvcGVyZXoiLCJwYXNzd29yZCI6ImhlbGxvMTIzIn19.sAUhORaa_l0WH9bwgzuGObssmz_36ShGnCfEYPOlGj8
+TOKEN_SECRET=
+TEST_USERNAME=
+TEST_PASSWORD=
+TEST_JWT=
 ENV=dev
 ```
 
-If you want to change `TOKEN_SECRET`, remember to also change `TEST_JWT` since the latter is signed with the former.
+To generate an accurate TEST_JWT, remember to use the same value for `TEST_USERNAME` and `TEST_PASSWORD`, and signed it with the value for `TOKEN_SECRET` that you used.
 
 8. Run `db-migrate up` to run the migrations and create our tables.
 
