@@ -37,8 +37,7 @@ describe('products handler', () => {
 
         const newRecord: Product = {
             name: 'Sabila',
-            price: 20,
-            category: 'plants'
+            price: 20
         }
         
         it('post to /products should create product', async () => {

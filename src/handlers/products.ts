@@ -10,8 +10,7 @@ const store = new ProductStore();
 
 const index = async (_req: express.Request, res: express.Response) => {
     try {
-        const category = _req.params.category
-        const products = await store.index(category)
+        const products = await store.index()
         res.json(products)
     }
     catch (err) {
@@ -33,8 +32,7 @@ const show = async (_req: express.Request, res: express.Response) => {
 const create = async (_req: express.Request, res: express.Response) => {
     const product: Product = {
         name: _req.body.name,
-        price: Number(_req.body.price),
-        category: _req.body.category
+        price: Number(_req.body.price)
     }
     try {
 

@@ -64,43 +64,35 @@ var addOverviewTestData = function () { return __awaiter(void 0, void 0, void 0,
                 newProducts = [
                     {
                         name: 'Sabila',
-                        price: 20.00,
-                        category: 'plants'
+                        price: 20.00
                     },
                     {
                         name: 'Cactus',
-                        price: 10.00,
-                        category: 'plants'
+                        price: 10.00
                     },
                     {
                         name: 'Rose',
-                        price: 5.00,
-                        category: 'plants'
+                        price: 5.00
                     },
                     {
                         name: 'Peace Lily',
-                        price: 15.00,
-                        category: 'plants'
+                        price: 15.00
                     },
                     {
                         name: 'Spider Plant',
-                        price: 15.00,
-                        category: 'plants'
+                        price: 15.00
                     },
                     {
                         name: 'Pothos',
-                        price: 15.00,
-                        category: 'plants'
+                        price: 15.00
                     },
                     {
                         name: 'Air Plant',
-                        price: 15.00,
-                        category: 'plants'
+                        price: 15.00
                     },
                     {
                         name: 'Snake Plant',
-                        price: 15.00,
-                        category: 'plants'
+                        price: 15.00
                     }
                 ];
                 completedOrderA = {

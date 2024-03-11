@@ -81,8 +81,7 @@ describe('products handler', function () {
         var testJWT = process.env.TEST_JWT || '';
         var newRecord = {
             name: 'Sabila',
-            price: 20,
-            category: 'plants'
+            price: 20
         };
         it('post to /products should create product', function () { return __awaiter(void 0, void 0, void 0, function () {
             var resp, product;

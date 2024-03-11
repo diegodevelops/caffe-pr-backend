@@ -46,7 +46,7 @@ TEST_JWT=
 ENV=dev
 ```
 
-To generate an accurate TEST_JWT, remember to use the same value for `TEST_USERNAME` and `TEST_PASSWORD`, and signed it with the value for `TOKEN_SECRET` that you used.
+To generate an accurate value for `TEST_JWT`, remember to use the same value for `TEST_USERNAME` and `TEST_PASSWORD` that you use in the payload for the JWT token, and signed it with the value for `TOKEN_SECRET` that you used.
 
 8. Run `db-migrate up` to run the migrations and create our tables.
 

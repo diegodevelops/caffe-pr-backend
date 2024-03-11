@@ -27,7 +27,6 @@ Routes to resources were added to the right of each API endpoint
 -  id
 - name
 - price
-- [OPTIONAL] category
 
 #### User
 - id
@@ -78,3 +77,21 @@ Routes to resources were added to the right of each API endpoint
 | quantity     | integer       |
 | order_id     | bigint        |
 | product_id   | bigint        |
+
+
+**categories**
+
+| column    | data type     |
+| --------- | ------------- |
+| id        | primary key   |
+| name      | varchar(100)  |
+| type      | varchar(64)   |
+
+
+**product_categories**
+
+| column       | data type     |
+| ------------ | ------------- |
+| id           | primary key   |
+| product_id   | bigint        |
+| category_id  | bigint        |

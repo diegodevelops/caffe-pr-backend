@@ -41,8 +41,7 @@ var store = new product_1.ProductStore();
 describe("Product model", function () {
     var newRecord = {
         name: "Sabila",
-        price: 20,
-        category: 'plants'
+        price: 20
     };
     it('should have an index method', function () {
         expect(store.index).toBeDefined();
@@ -85,7 +84,7 @@ describe("Product model", function () {
         var result;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, store.index('plants')];
+                case 0: return [4 /*yield*/, store.index()];
                 case 1:
                     result = _a.sent();
                     expect(result[0].name).toEqual(newRecord.name);

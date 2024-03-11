@@ -6,8 +6,7 @@ describe("Product model", () => {
 
     let newRecord: Product = {
         name: "Sabila",
-        price: 20,
-        category: 'plants'
+        price: 20
     }
 
     it('should have an index method', () => {
@@ -38,7 +37,7 @@ describe("Product model", () => {
     });
 
     it('index with input category "plants" method should return a list of products', async () => {
-        const result = await store.index('plants');
+        const result = await store.index();
         expect(result[0].name).toEqual(newRecord.name);
     });
 

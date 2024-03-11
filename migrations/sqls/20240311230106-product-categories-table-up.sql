@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS product_categories (id SERIAL PRIMARY KEY, product_id bigint NOT NULL REFERENCES products(id), category_id bigint NOT NULL REFERENCES categories(id));
