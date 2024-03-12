@@ -1,4 +1,5 @@
 import express, { Request, Response } from 'express'
+import cors from 'cors';
 import bodyParser from 'body-parser'
 import userRoutes from './handlers/users'
 import productRoutes from './handlers/products'
@@ -12,6 +13,7 @@ const port: number = parseInt(process.env.PORT || '3000')
 const address: string = `0.0.0.0:${port}`
 
 app.use(bodyParser.json())
+app.use(cors());
 
 app.get('/', function (req: Request, res: Response) {
     res.send('Hello World!')
