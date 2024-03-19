@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "build": "tsc",
-    "deploy": "npm run build && eb init caffe-pr-backend-dev --platform node.js && eb list && eb use Caffe-pr-backend-dev-env && eb deploy",
+    "deploy": "npm install && npm run build && eb init caffe-pr-backend-dev --platform node.js && eb list && eb use Caffe-pr-backend-dev-env && eb deploy",
     "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\"",
     "test": "export ENV=test && npx tsc && db-migrate --env test reset && db-migrate --env test up && jasmine",
     "tsc": "tsc"
